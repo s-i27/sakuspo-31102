@@ -1,0 +1,47 @@
+<%# CSS・・・assets/stylesheets/shared/header.css %>
+<header class='c-top-bar'>
+  <div class='c-top-bar__container'>
+    <div class='c-top-bar__left-area'>
+     <%= link_to "Sakuspo!", root_path, class:"top-icon" %>
+    </div>
+    <div class="c-top-bar__right-area">
+      <nav class="c-top-bar__gnav not-login">
+        <ul>
+      <% if user_signed_in? %>
+          <li class="c-top-bar__gnav__item">
+            <%= "#{current_user.nickname}でログイン中" %></li>
+          <li class="c-top-bar__gnav__item">
+          <div class="c-top-bar__gnav__login-button">
+            <%= link_to 'ログアウト', destroy_user_session_path, method: :delete %>
+            </div>
+          </li>
+      <% else %>
+          <li class="c-top-bar__gnav__item"><div class="c-top-bar__gnav__login-button">
+                <%= link_to 'ログイン' , new_user_session_path , class: "c-top-bar__gnav__login-button__description" %>
+            </div>
+          </li>
+          <li class="c-top-bar__gnav__item"><div class="c-top-bar__gnav__register-button">
+                <%= link_to '無料新規登録' , new_user_registration_path , class: "login-button__description" %>
+            </div>
+          </li>
+        </ul>
+      <% end %>  
+      </nav>
+    </div>
+  </div>
+
+
+  <div class='saishin-p-wants-search-bar'>
+    <div class='saishin-p-wants-search-bar'>
+      <a href="/b?urrltkn=CxQg9Mix3ss" class="saishin-c-search-box">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="saishin-c-search-box__icon">
+          <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#25282B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M20.9999 21L16.6499 16.65" stroke="#25282B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          </path>
+        </svg> 
+          <span>募集をさがす</span>
+      </a>
+    </div>
+  </div>
+    
+  
+</header>
