@@ -1,0 +1,13 @@
+ja:
+ activerecord:
+   attributes:
+     user:
+      full_name: フルネーム
+      full_name_kana: フリガナ
+      gender_id: 性別
+      phone_number: 電話番号
+      nickname: ニックネーム
+
+    #  room:
+    #    text: テキスト
+    #    image: 画像
