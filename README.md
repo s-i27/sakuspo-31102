@@ -42,9 +42,9 @@ Things you may want to cover:
     ## roomsテーブル
 		| Column             | Type       | Options                        |
 		| -------------------| ---------- | ------------------------------ |
-		| title              | string     | null: false,unique: true       |
+		| title              | string     | null: false							       |
 		| text               | text       | null: false                    |
-		| category_id        | integer    | null: false,unique: true       |
+		| category_id        | integer    | null: false 						       |
 		| price              | integer    | null: false                    |
 		| date_time          | date       | null: false                    |
 		| deadline_date_time | date       | null: false                    |

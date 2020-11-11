@@ -10,7 +10,7 @@
     width: 100vw;
     height: 12vh;
     text-align: center;
-    background: linear-gradient(to bottom,#2e94e7,#d3f3f5);
+    background: linear-gradient(to bottom,#e8ffff,#8ec6fa);
   }
 
 .c-top-bar__container {
@@ -106,7 +106,7 @@ a {
 }
 
 .top-icon{
-  color: rgb(206, 217, 252);
+  color:rgb(24, 88, 226);
   font-size: 30px;
 }
 

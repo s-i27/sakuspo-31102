@@ -3,13 +3,12 @@ a {
 }
 
 .main {
-  background:#3ccace;
+  background:white;
 }
 
-/* 画面上部の「人生を変えるフリマアプリ」帯部分 */
+/* 画面上部部分 */
 .title-contents {
   width: 100vw;
-  background-image: image-url('furima-header01.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
@@ -18,7 +17,7 @@ a {
   align-items: flex-start;
   justify-content: center;
   padding: 5vh 15vw;
-  color: #fff;
+  color: black;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
 }
 
@@ -45,7 +44,7 @@ a {
   height: 9vh;
 }
 
-/* //画面上部の「人生を変えるフリマアプリ」帯部分 */
+/* //画面上部部分 */
 .select-reason-contents {
   padding: 5vh 15vw;
 }
@@ -128,7 +127,7 @@ a {
   align-items: flex-start;
   justify-content: center;
   padding: 5vh 15vw;
-  color: #fff;
+  color: black;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
 }
 
@@ -297,4 +296,10 @@ a {
 
 .star-count {
   font-size: 2vh;
+}
+
+.dm{
+  background-color: #E2E2E2;
+  border: none;
+  height: 1px;
 }
