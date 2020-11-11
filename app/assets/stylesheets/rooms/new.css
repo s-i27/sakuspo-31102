@@ -1,0 +1,99 @@
+.rooms {
+  width: 700px;
+  height: 1000px;
+  margin: 60px auto 0;
+  border-radius: 4px;
+  border: 2px #ddd solid;
+}
+
+.rooms-inner {
+  padding: 20px 26px;
+}
+
+.rooms-gender
+,.rooms-title
+,.rooms-text
+,.rooms-price
+,.rooms-datetime
+,.rooms-place
+,.rooms-image
+,.rooms-video{
+  display: flex;
+  font-weight: 600;
+  margin: 30px 0;
+  font-size: 16px;
+}
+
+.input-wrap{
+  display: flex;
+  margin-left: 60px;
+  
+}
+
+.select-box{
+  height: 30px;
+  width: 10%;
+  background-color: #f5f5f5;
+  padding-left: 20px;
+  margin-left: 60px;
+  box-shadow: 0 1px 0 rgba(0,0,0,.07) inset;
+  border: 1px solid #a6a6a6;
+  border-radius: 3px;
+}
+
+.rooms_text_filed,.text_place{
+  border-style: none;
+  box-sizing: border-box;
+  width: 80%;
+  height: 31px;
+  border: 1px solid #a6a6a6;
+  box-shadow: 0 1px 0 rgba(0,0,0,.07) inset;
+  border-radius: 3px;
+  padding: 0 7px;
+  margin-left: 60px;
+}
+
+.rooms_text_area{
+  border-style: none;
+  box-sizing: border-box;
+  width: 80%;
+  border: 1px solid #a6a6a6;
+  box-shadow: 0 1px 0 rgba(0,0,0,.07) inset;
+  border-radius: 3px;
+  padding: 0 7px;
+  margin-left: 60px;
+  border-radius: 4px;
+  resize: none;
+}
+
+.text_price{
+  border-style: none;
+  box-sizing: border-box;
+  width: 20%;
+  border: 1px solid #a6a6a6;
+  box-shadow: 0 1px 0 rgba(0,0,0,.07) inset;
+  border-radius: 3px;
+  padding: 0 7px;
+  margin-left: 60px;
+  border-radius: 4px;
+  resize: none;
+}
+
+.rooms-submit input[type="submit"] {
+  border-style: none;
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(to bottom,#0a66df,#e7e9ec);
+  border-radius: 3px;
+  border: 1px #a88734 solid;
+}
+
+.text_image,.text_image{
+  margin-left: 10px;
+}
+
+.rooms-submit{
+  margin: 0 auto 0;
+  margin-top: 50px;
+  width: 40%;
+}
