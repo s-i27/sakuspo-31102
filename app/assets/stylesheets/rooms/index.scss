@@ -6,9 +6,34 @@ a {
   background:white;
 }
 
+.am{
+  background-color: #E2E2E2;
+  border: none;
+  height: 1px;
+  margin-bottom: 15px;  
+}
+
+.dm{
+  background-color: #E2E2E2;
+  border: none;
+  height: 2px;
+  margin-bottom: 15px;
+}
+
+/* //画面左部部分 */
+.left-lists{
+  height: 300px;
+  width: 200px;
+}
+
+.left-contents{
+  margin-top: 50px;
+}
+
 /* //画面上部部分 */
 .select-reason-contents {
   padding: 5vh 5vw;
+  display: flex;
 }
 
 .ad-contents {
@@ -28,11 +53,6 @@ a {
   background-color: whitesmoke;
 }
 
-.dm{
-  background-color: #E2E2E2;
-  border: none;
-  height: 2px;
-}
 
 .img-title{
   font-weight: 1000;

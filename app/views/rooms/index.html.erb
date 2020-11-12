@@ -1,12 +1,27 @@
 <%= render "shared/header" %>
 <div class='main'>
-
+        <%=link_to (image_tag 'd15d275dcb53ef68d35759b84cb30d00.png' , size: '300x50' ,class: "purchase-btn-icon") , new_rooms_path %>
   <div class='select-reason-contents'>
+    <div class='left-contents'>
+      <hr class="dm">
+      <p class='ad-footer-explain'>
+        募集スポーツ一覧
+      </p>
+        <ul class="left-lists">
+          <li>サッカー、フットサル</li><hr class="am"> 
+          <li>ボルタリング</li><hr class="am"> 
+          <li>野球</li><hr class="am"> 
+          <li>ダーツ</li><hr class="am"> 
+          <li>ボルタリング</li><hr class="am"> 
+          <li>バレーボール</li><hr class="am"> 
+          <li>バトミントン</li><hr class="am"> 
+        </ul>
+      <hr class="dm">
+    </div>
   
-  <%=link_to (image_tag 'd15d275dcb53ef68d35759b84cb30d00.png' , size: '300x50' ,class: "purchase-btn-icon") , new_rooms_path %>
   <%# 画面中央募集、参加部分 %>
-  <hr class="dm">
   <div class='ad-contents'>
+  <hr class="dm">
       <p class='ad-footer-explain'>
         新着募集情報
       </p>
@@ -20,12 +35,18 @@
         <span class="img-text">　　　　　開催日；　　</span><%= room.date_time %><br></span>
 				<span class="img-text">　　　　　競技名；　　</span><%= room.category.name %><br></tr>
         <span class="img-text">　　　　　参加料金；　</span><%= room.price %>円<br></span>
+        <span class="img-text">　　　　　会場；　　　</span><%= room.place %><br></span>
+          <br>
+          <br>
+          <br>
         <span class="img-text">　　　　　主催者；　　</span><%= room.user.nickname %>　様<br></span>
       </div> 
     </div>
 			<% end %>
-  </div>
   <hr class="dm">
+  </div>
+
+
   <%# /画面中央カテゴリごとの新着募集スポーツ部分 %>
   <div class='feature-contents'>
   </div>
