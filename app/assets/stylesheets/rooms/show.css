@@ -1,0 +1,14 @@
+.show{
+  width: 100vw;
+  height: 1000px;
+  padding: 5vh 5vw;
+}
+
+.show-main{
+  margin-left: 100px;
+  margin-right: 200px;
+}
+
+.purchase-showbtn{
+  margin-left: 200px;
+}

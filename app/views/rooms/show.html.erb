@@ -1,0 +1,27 @@
+<%= render "shared/header" %>
+
+<div class="show" >
+  <div class="show-main" >
+     <%= image_tag @room.image, :size => '300x300', class: "show-img" %><br>
+      <h1><%= @room.title %></h1>
+     <hr class="dm">
+      <b class="show-text">競技名　　　　　　　　　　</b><%= @room.category.name %><br>
+    <hr class="dm">
+      <b class="show-text">開催日　　　　　　　　　　</b><%= @room.date_time %><br>
+    <hr class="dm">
+      <b class="show-text">募集期限　　　　　　　　　</b><%= @room.deadline_date_time %><br>
+    <hr class="dm">
+      <b class="show-text">参加料金　　　　　　　  </b><%= @room.price %>円<br>
+    <hr class="dm">
+      <b class="show-text">会場　　　　　　　　　</b><%= @room.place %><br>
+    <hr class="dm">
+      <b class="show-text">内容　　　　　　　　　</b><%= @room.text %><br>
+    <hr class="dm">
+      <br>
+
+    <%=link_to (image_tag 'df6afcc474400fe2eed4b24c0028b683.png', :size => '300x50', class: "purchase-showbtn") , new_room_path %>
+
+  </div>
+</div>
+
+<%= render "shared/footer" %>
