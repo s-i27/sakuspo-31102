@@ -10,5 +10,9 @@
 }
 
 .purchase-showbtn{
-  margin-left: 200px;
+  margin-left: 100px;
+}
+
+.show-btn{
+  display: flex;
 }

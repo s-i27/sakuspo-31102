@@ -19,7 +19,16 @@
     <hr class="dm">
       <br>
 
-    <%=link_to (image_tag 'df6afcc474400fe2eed4b24c0028b683.png', :size => '300x50', class: "purchase-showbtn") , new_room_path %>
+  <% if user_signed_in? %>
+    <div class="show-btn" >
+    <% if current_user.id != @room.user.id %>
+        <%=link_to (image_tag 'df6afcc474400fe2eed4b24c0028b683.png', :size => '300x50', class: "purchase-showbtn") , new_room_path %>
+    <% elsif current_user.id == @room.user.id %>
+        <%=link_to (image_tag '54b047639fa14e5eceaf57fddc3b4e53.png', :size => '350x50', class: "purchase-showbtn") , new_room_path %>
+    </div> 
+    <% end %>
+	<% end %>
+			
 
   </div>
 </div>
