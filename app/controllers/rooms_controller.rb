@@ -22,6 +22,19 @@ class RoomsController < ApplicationController
     end  
   end  
 
+  def edit
+    @room = Room.find(params[:id])
+  end
+
+  def update
+    @room = Room.find(params[:id])
+    if @room.update(room_params)
+      redirect_to room_path
+    else
+      render :edit
+    end 
+  end 
+
   private
   def room_params
     params.require(:room).permit(:title,:text,:category_id,:price,:date_time,:deadline_date_time,:place,:video,:image).merge(user_id: current_user.id)
