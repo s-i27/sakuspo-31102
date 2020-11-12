@@ -5,6 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable, :omniauthable, omniauth_providers: [:facebook, :google_oauth2]
 
   has_many :sns_credentials
+  has_many :rooms
 
   validates :nickname,  presence: true,uniqueness:  { case_sensitive: true }
   validates :full_name, presence: true
