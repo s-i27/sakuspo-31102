@@ -35,6 +35,14 @@ class RoomsController < ApplicationController
     end 
   end 
 
+  def destroy
+    @room = Room.find(params[:id])
+    if current_user.id = @room.user_id
+      @room.destroy
+      redirect_to root_path
+    end 
+  end  
+
   private
   def room_params
     params.require(:room).permit(:title,:text,:category_id,:price,:date_time,:deadline_date_time,:place,:video,:image).merge(user_id: current_user.id)
