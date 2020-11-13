@@ -10,11 +10,11 @@
   </head>
 
   <body>
-    <div class="wrapper">
-      <%= render "shared/header" %>
-      <%= breadcrumbs separator: " &rsaquo; "  %>
-      <%= yield %>
-    <div class="wrapper">
+    <%= render "shared/header" %>
+      <div class="wrapper">
+        <%= breadcrumbs separator: " &rsaquo; "  %>
+        <%= yield %>
+      </div>
     <%= render "shared/footer" %>
   </body>
 </html>

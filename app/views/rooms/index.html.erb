@@ -5,9 +5,9 @@
   <div class='select-reason-contents'>
     <div class='left-contents'>
       <hr class="dm">
-      <p class='ad-footer-explain'>
+      <h1 class='ad-footer-explain'>
         スポーツ一覧
-      </p>
+      </h1>
         <ul class="left-lists">
           <li>サッカー、フットサル</li><hr class="am"> 
           <li>ボルタリング</li><hr class="am"> 
@@ -24,8 +24,8 @@
   <div class='ad-contents'>
       <div class='search'>
         <hr class="dm">
-          <p class='ad-footer-explain'>
-            募集を探す</p>
+          <h1 class='ad-footer-explain'>
+            募集を探す</h1>
             <%= search_form_for @p, url: search_rooms_path do |f| %>
               <%= f.label :title_eq, '競技名：' %>
               <%= f.collection_select :category_id_eq, @category, :id, :name, include_blank: '指定なし' %>
@@ -49,9 +49,9 @@
      </div> 
 
       <hr class="dm">
-      <p class='ad-footer-explain'>
+      <h1 class='ad-footer-explain'>
         新着募集情報
-      </p>
+      </h1>
     <% @rooms.each do |room| %>
 				  <%= link_to room_path(room.id) do %>
          <h2 class="img-title"><%= room.title %><br></h1>
@@ -74,6 +74,8 @@
 		<% end %>
   <hr class="dm">
   <%# 新規募集情報 %>
+
+  <%= paginate @rooms %>
 
 </div>
 

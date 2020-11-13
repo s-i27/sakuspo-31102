@@ -4,7 +4,7 @@ class RoomsController < ApplicationController
 
 
   def index
-    @rooms = Room.all
+    @rooms = Room.all.page(params[:page]).per(5)
     set_room_column
   end  
 
