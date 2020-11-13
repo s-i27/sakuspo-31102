@@ -49,31 +49,33 @@
      </div> 
 
       <hr class="dm">
-      <h1 class='ad-footer-explain'>
-        新着募集情報
-      </h1>
-    <% @rooms.each do |room| %>
-				  <%= link_to room_path(room.id) do %>
-         <h2 class="img-title"><%= room.title %><br></h1>
-      <div class="content_post" >
-        <div class="content_image" >
-            <%= image_tag room.image, :size => '200x200', class: "room-img" %>
-        </div> 
-        <div class="content_text" >
-            <span class="img-text">　　　　　開催日；　　</span><%= room.date_time %><br></span>
-				    <span class="img-text">　　　　　競技名；　　</span><%= room.category.name %><br></tr>
-            <span class="img-text">　　　　　参加料金；　</span><%= room.price %>円<br></span>
-            <span class="img-text">　　　　　会場；　　　</span><%= room.place %><br></span>
-          <br>
-          <br>
-          <br>
-            <span class="img-text">　　　　　主催者；　　</span><%= room.user.nickname %>　様<br></span>
-          <% end %>
-        </div> 
-    </div>
-		<% end %>
-  <hr class="dm">
-  <%# 新規募集情報 %>
+      <div class="new-rooms">
+          <h1 class='ad-footer-explain'>
+            新着募集情報
+          </h1>
+        <% @rooms.each do |room| %>
+              <%= link_to room_path(room.id) do %>
+            <h2 class="img-title"><%= room.title %><br></h1>
+          <div class="content_post" >
+            <div class="content_image" >
+                <%= image_tag room.image, :size => '200x200', class: "room-img" %>
+            </div> 
+            <div class="content_text" >
+                <span class="img-text">　　　　　開催日；　　</span><%= room.date_time %><br></span>
+                <span class="img-text">　　　　　競技名；　　</span><%= room.category.name %><br></tr>
+                <span class="img-text">　　　　　参加料金；　</span><%= room.price %>円<br></span>
+                <span class="img-text">　　　　　会場；　　　</span><%= room.place %><br></span>
+              <br>
+              <br>
+              <br>
+                <span class="img-text">　　　　　主催者；　　</span><%= room.user.nickname %>　様<br></span>
+              <% end %>
+            </div> 
+        </div>
+        <% end %>
+      <hr class="dm">
+      
+      <%# 新規募集情報 %>
 
   <%= paginate @rooms %>
 

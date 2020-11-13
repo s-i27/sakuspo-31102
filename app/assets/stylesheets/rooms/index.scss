@@ -36,6 +36,7 @@ a {
 /* //画面中央上部部分 */
 .search{
   background-color: #f7fcfe;
+  box-shadow: 1px 1px 3px gray;
 }
 
 
@@ -52,6 +53,10 @@ a {
   color: black;
 }
 
+.new-rooms{
+  box-shadow: 1px 1px 4px gray;
+}
+
 .ad-footer-explain{
   margin-bottom: 15px;
 }
@@ -61,7 +66,6 @@ a {
   margin-bottom: 10px;
   background-color: whitesmoke;
 }
-
 
 .img-title{
   font-weight: 1000;
