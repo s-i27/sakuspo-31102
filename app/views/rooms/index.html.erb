@@ -6,7 +6,7 @@
     <div class='left-contents'>
       <hr class="dm">
       <p class='ad-footer-explain'>
-        募集スポーツ一覧
+        スポーツ一覧
       </p>
         <ul class="left-lists">
           <li>サッカー、フットサル</li><hr class="am"> 
@@ -22,7 +22,30 @@
   
   <%# 新規募集情報 %>
   <div class='ad-contents'>
-  <hr class="dm">
+      <div class='search'>
+        <hr class="dm">
+          <p class='ad-footer-explain'>
+            募集を探す</p>
+            <%= search_form_for @p, url: search_rooms_path do |f| %>
+              <%= f.label :title_eq, '競技名' %>
+              <%= f.collection_select :category_id_eq, @category, :id, :name, include_blank: '指定なし' %>
+              <br>
+              <%= f.label :title_eq, 'ルーム名' %>
+              <%= f.collection_select :title_eq, @room_title, :title, :title,  include_blank: '指定なし' %>
+              <br>
+              <%= f.label :price, '価格：' %>
+              <%= f.radio_button :price_lteq, '' %>指定なし
+              <%= f.radio_button :price_lteq, '500' %>500円以下
+              <%= f.radio_button :price_lteq, '1000' %>1000円以下
+              <%= f.radio_button :price_lteq, '2500' %>2500円以下
+              <%= f.radio_button :price_lteq, '5000' %>5000円以下
+              <br>
+              <%= f.submit '検索' %>
+            <% end %>
+        <hr class="dm"> 
+     </div> 
+
+      <hr class="dm">
       <p class='ad-footer-explain'>
         新着募集情報
       </p>
