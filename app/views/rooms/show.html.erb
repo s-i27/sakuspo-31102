@@ -2,8 +2,8 @@
 
 <div class="show" >
   <div class="show-main" >
-     <%= image_tag @room.image, :size => '300x300', class: "show-img" %><br>
       <h1><%= @room.title %></h1>
+     <%= image_tag @room.image, :size => '300x300', class: "show-img" %><br>
      <hr class="dm">
       <b class="show-text">競技名　　　　　　　　　　</b><%= @room.category.name %><br>
     <hr class="dm">
@@ -25,6 +25,8 @@
         <%=link_to (image_tag 'df6afcc474400fe2eed4b24c0028b683.png', :size => '300x50', class: "purchase-showbtn") , new_room_path %>
     <% elsif current_user.id == @room.user.id %>
         <%=link_to (image_tag '54b047639fa14e5eceaf57fddc3b4e53.png', :size => '350x50', class: "purchase-showbtn") , edit_room_path(@room.id) %>
+        <%=link_to (image_tag 'b97f52f503987004dc3e9cb0a3abb094.png', :size => '250x50', class: "purchase-showbtn") , room_path(@room.id), method: :delete %>
+        <br>
     </div> 
     <% end %>
 	<% end %>
