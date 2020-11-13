@@ -27,13 +27,16 @@
           <p class='ad-footer-explain'>
             募集を探す</p>
             <%= search_form_for @p, url: search_rooms_path do |f| %>
-              <%= f.label :title_eq, '競技名' %>
+              <%= f.label :title_eq, '競技名：' %>
               <%= f.collection_select :category_id_eq, @category, :id, :name, include_blank: '指定なし' %>
+              <br>
+              <%= f.label :date_time_eq, '開催日：' %>
+              <%= f.date_field :date_time_eq %>
               <br>
               <%= f.label :title_eq, 'ルーム名' %>
               <%= f.collection_select :title_eq, @room_title, :title, :title,  include_blank: '指定なし' %>
               <br>
-              <%= f.label :price, '価格：' %>
+              <%= f.label :price, '参加料金：' %>
               <%= f.radio_button :price_lteq, '' %>指定なし
               <%= f.radio_button :price_lteq, '500' %>500円以下
               <%= f.radio_button :price_lteq, '1000' %>1000円以下
