@@ -98,4 +98,18 @@ margin-left: 20px;
   background-color: whitesmoke;
 }
 
+.fa-arrow-alt-circle-left {
+  font-size: 50px;
+  position: absolute;
+  z-index: 100;
+  left: -100px;
+  top: 300px;
+}
 
+.fa-arrow-alt-circle-right {
+  font-size: 50px;
+  position: absolute;
+  z-index: 100;
+  right: -100px;
+  top: 300px
+}
