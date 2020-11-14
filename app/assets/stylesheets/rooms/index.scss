@@ -19,6 +19,29 @@
   margin-bottom: 15px;
 }
 
+// 画像スライド表示部分
+.slider{
+  height: 30px;
+}
+
+.fa-angle-double-left {
+  font-size: 50px;
+  position: absolute;
+  z-index: 100;
+  left: 50px;
+  top: 150px;
+  color: #8ec6fa;
+}
+
+.fa-angle-double-right {
+  font-size: 50px;
+  position: absolute;
+  z-index: 100;
+  right: 50px;
+  color: #8ec6fa;
+  top: 150px
+}
+
 /* //画面左部部分 */
 .left-lists{
   width: 230px;
@@ -26,6 +49,8 @@
 .left-contents{
   margin-top: 50px;
 }
+
+
 
 /* //画面右部部分 */
 .rihgt-contents{
@@ -44,9 +69,34 @@
   box-shadow: 1px 1px 3px gray;
 }
 
-.search-conditions{
+.search-content{
 margin-left: 20px;
+}
 
+.search-conditions{
+  padding: 5px 10px;
+  background: white;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  border: 1px solid #dfe1e5;
+  margin-top: 5px;
+}
+
+.search-submit{
+  width:80px;/*検索ボタンの横幅*/ 
+  height:30px;/*検索ボタンの縦幅*/   
+  left:270px;/*検索ボタンの位置調整*/  
+  top:0;
+  border-radius:0 2px 2px 0;/*検索ボタンの角を丸める*/ 
+  background:#228df8;/*検索ボタンの背景カラー*/ 
+  border:none;/*検索ボタンの枠線を消す*/ 
+  color:#fff;/*検索ボタンのテキストカラー*/ 
+  font-weight:bold;/*検索ボタンのテキスト太字*/ 
+  font-size:14px;/*検索ボタンのフォントサイズ*/ 
+}
+
+.search-submit:hover{
+  color:#666;/*検索ボタンマウスオーバー時のフォントカラー*/ 
 }
 
 /* //画面中央下部部分 */
@@ -70,5 +120,3 @@ margin-left: 20px;
   font-weight: bold;
   background-color: whitesmoke;
 }
-
-
