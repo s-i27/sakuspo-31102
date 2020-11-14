@@ -17,5 +17,5 @@ require('jquery')
 // const imagePath = (name) => images(name, true)
 
 $(function() {
-  console.log("OK");
+  $('.slider').slick();
 });
