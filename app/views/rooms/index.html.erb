@@ -1,10 +1,22 @@
 <% breadcrumb :rooms %>
+<%=link_to (image_tag 'd15d275dcb53ef68d35759b84cb30d00.png' , size: '300x50' ,class: "purchase-btn-icon") , new_room_path %>
 
-<div class='main'>
-        <%=link_to (image_tag 'd15d275dcb53ef68d35759b84cb30d00.png' , size: '300x50' ,class: "purchase-btn-icon") , new_room_path %>
-  <div class='select-reason-contents'>
-    <div class='left-contents'>
+<div class='contents'>
+  <div class='left-contents'>
       <hr class="dm">
+      <h1 class='ad-footer-explain'>
+        一覧
+      </h1>
+        <ul class="left-lists">
+          <li>HOME</li><hr class="am"> 
+          <li>マイページ</li><hr class="am"> 
+          <li>メッセージ</li><hr class="am"> 
+          <li>募集一覧</li><hr class="am"> 
+          <li>設定</li><hr class="am"> 
+          <li>人気スポーツ情報</li><hr class="am"> 
+        </ul>
+      <hr class="dm">
+
       <h1 class='ad-footer-explain'>
         スポーツ一覧
       </h1>
@@ -18,23 +30,27 @@
           <li>バトミントン</li><hr class="am"> 
         </ul>
       <hr class="dm">
-    </div>
+  </div>
+  
   
   <%# 新規募集情報 %>
-  <div class='ad-contents'>
-      <div class='search'>
+  <div class='rihgt-contents'>
+    <div class='search'>
         <hr class="dm">
           <h1 class='ad-footer-explain'>
             募集を探す</h1>
             <%= search_form_for @p, url: search_rooms_path do |f| %>
+              <%= f.label :title_or_price_or_place_cont, '文字検索：', placeholder: "例 サッカー" %>
+              <%= f.text_field :title_or_price_or_place_cont, placeholder: "例 サッカー",  class: 'search-conditions' %>
+              <br>
               <%= f.label :title_eq, '競技名：' %>
-              <%= f.collection_select :category_id_eq, @category, :id, :name, include_blank: '指定なし' %>
+              <%= f.collection_select :category_id_eq, @category, :id, :name, include_blank: '指定なし', class: 'search-conditions' %>
               <br>
               <%= f.label :date_time_eq, '開催日：' %>
-              <%= f.date_field :date_time_eq %>
+              <%= f.date_field :date_time_eq , class: 'search-conditions'%>
               <br>
               <%= f.label :title_eq, 'ルーム名' %>
-              <%= f.collection_select :title_eq, @room_title, :title, :title,  include_blank: '指定なし' %>
+              <%= f.collection_select :title_eq, @room_title, :title, :title,  include_blank: '指定なし' , class: 'search-conditions'%>
               <br>
               <%= f.label :price, '参加料金：' %>
               <%= f.radio_button :price_lteq, '' %>指定なし
@@ -53,40 +69,29 @@
           <h1 class='ad-footer-explain'>
             新着募集情報
           </h1>
-        <% @rooms.each do |room| %>
-              <%= link_to room_path(room.id) do %>
-            <h2 class="img-title"><%= room.title %><br></h1>
+            <% @rooms.each do |room| %>
+                <%= link_to room_path(room.id) do %>
+                  <h2 class="img-title"><%= room.title %><br></h1>
           <div class="content_post" >
-            <div class="content_image" >
-                <%= image_tag room.image, :size => '200x200', class: "room-img" %>
-            </div> 
-            <div class="content_text" >
-                <span class="img-text">　　　　　開催日；　　</span><%= room.date_time %><br></span>
-                <span class="img-text">　　　　　競技名；　　</span><%= room.category.name %><br></tr>
-                <span class="img-text">　　　　　参加料金；　</span><%= room.price %>円<br></span>
-                <span class="img-text">　　　　　会場；　　　</span><%= room.place %><br></span>
-              <br>
-              <br>
-              <br>
-                <span class="img-text">　　　　　主催者；　　</span><%= room.user.nickname %>　様<br></span>
-              <% end %>
-            </div> 
-        </div>
+                <div class="content_image" >
+                  <%= image_tag room.image, :size => '200x200', class: "room-img" %>
+                </div> 
+                <div class="content_text" >
+                  <span class="img-text">　　　　　開催日；　　</span><%= room.date_time %><br></span>
+                  <span class="img-text">　　　　　競技名；　　</span><%= room.category.name %><br></tr>
+                  <span class="img-text">　　　　　参加料金；　</span><%= room.price %>円<br></span>
+                  <span class="img-text">　　　　　会場；　　　</span><%= room.place %><br></span>
+                  <span class="img-text">　　　　　主催者；　　</span><%= room.user.nickname %>　様<br></span>
+            <% end %>
+                </div> 
+           </div>
         <% end %>
-      <hr class="dm">
+        <hr class="dm">
       
-      <%# 新規募集情報 %>
+        <%= paginate @rooms %>
 
-  <%= paginate @rooms %>
-
-</div>
-
-
-  <%# /画面中央カテゴリごとの新着募集スポーツ部分 %>
-  <div class='feature-contents'>
+    </div>
   </div>
+  <%# 新規募集情報 %>
 
-  <%# その他スポーツ一覧 %>
-  <div class='item-contents'>
-  </div>
-</div>
+</div> 

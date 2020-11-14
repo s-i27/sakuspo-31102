@@ -126,5 +126,7 @@ legend {
 #yui3-css-stamp.cssreset { display: none; }
 
 body{
+  display: flex;
+  flex-flow: column;
   min-height: 100vh;
 }

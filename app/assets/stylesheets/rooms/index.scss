@@ -1,8 +1,6 @@
-a {
-  text-decoration: none;
-}
-
-.main {
+.contents {
+  padding: 5vh 5vw;
+  display: flex;
   background:white;
   width: 100vw;
 }
@@ -23,15 +21,22 @@ a {
 
 /* //画面左部部分 */
 .left-lists{
-  height: 300px;
-  width: 200px;
+  width: 230px;
 }
-
 .left-contents{
   margin-top: 50px;
 }
 
-
+/* //画面右部部分 */
+.rihgt-contents{
+  height: 1000px;
+  width: 1000px;
+  background-size: cover;
+  padding: 5vh ;
+  color: black;
+  margin-left: 50px;
+  padding: 5px;
+}
 
 /* //画面中央上部部分 */
 .search{
@@ -39,20 +44,12 @@ a {
   box-shadow: 1px 1px 3px gray;
 }
 
+.search-conditions{
+margin-left: 20px;
+
+}
 
 /* //画面中央下部部分 */
-.select-reason-contents {
-  padding: 5vh 5vw;
-  display: flex;
-}
-
-.ad-contents {
-  height: 1000px;
-  background-size: cover;
-  padding: 5vh ;
-  color: black;
-}
-
 .new-rooms{
   box-shadow: 1px 1px 4px gray;
 }
