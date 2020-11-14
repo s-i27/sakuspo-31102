@@ -19,6 +19,29 @@
   margin-bottom: 15px;
 }
 
+// 画像スライド表示部分
+.slider{
+  height: 30px;
+}
+
+.fa-angle-double-left {
+  font-size: 50px;
+  position: absolute;
+  z-index: 100;
+  left: 50px;
+  top: 150px;
+  color: #8ec6fa;
+}
+
+.fa-angle-double-right {
+  font-size: 50px;
+  position: absolute;
+  z-index: 100;
+  right: 50px;
+  color: #8ec6fa;
+  top: 150px
+}
+
 /* //画面左部部分 */
 .left-lists{
   width: 230px;
@@ -70,7 +93,7 @@ margin-left: 20px;
   color:#fff;/*検索ボタンのテキストカラー*/ 
   font-weight:bold;/*検索ボタンのテキスト太字*/ 
   font-size:14px;/*検索ボタンのフォントサイズ*/ 
-  }
+}
 
 .search-submit:hover{
   color:#666;/*検索ボタンマウスオーバー時のフォントカラー*/ 
@@ -96,20 +119,4 @@ margin-left: 20px;
   line-height: 1.5;
   font-weight: bold;
   background-color: whitesmoke;
-}
-
-.fa-arrow-alt-circle-left {
-  font-size: 50px;
-  position: absolute;
-  z-index: 100;
-  left: -100px;
-  top: 300px;
-}
-
-.fa-arrow-alt-circle-right {
-  font-size: 50px;
-  position: absolute;
-  z-index: 100;
-  right: -100px;
-  top: 300px
 }
