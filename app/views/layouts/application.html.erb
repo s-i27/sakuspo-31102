@@ -5,15 +5,20 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <!-- コード追加　Bootstrap CSS読み込みコード-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- コード追加　Bootstrap JavaScript読み込みコード-->
+
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
     <%= render "shared/header" %>
-    <%= breadcrumbs separator: " &rsaquo; "  %>
-    <%= yield %>
-
+      <div class="wrapper">
+        <%= breadcrumbs separator: " &rsaquo; "  %>
+        <%= yield %>
+      </div>
     <%= render "shared/footer" %>
   </body>
 </html>

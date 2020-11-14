@@ -1,8 +1,11 @@
 class RoomsController < ApplicationController
   before_action :authenticate_user!, only: [:new]
+  before_action :search_room, only: [:index, :search]
+
 
   def index
-    @rooms = Room.all
+    @rooms = Room.all.page(params[:page]).per(5)
+    set_room_column
   end  
 
   def show
@@ -43,9 +46,22 @@ class RoomsController < ApplicationController
     end 
   end  
 
+  def search
+    @results = @p.result
+  end
+
   private
   def room_params
     params.require(:room).permit(:title,:text,:category_id,:price,:date_time,:deadline_date_time,:place,:video,:image).merge(user_id: current_user.id)
   end 
+
+  def search_room
+    @p = Room.ransack(params[:q])
+    @category = Category.where.not(id: 1)
+  end
+
+  def set_room_column
+    @room_title = Room.select("title").distinct 
+  end
 
 end

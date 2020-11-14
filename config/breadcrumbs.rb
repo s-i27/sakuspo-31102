@@ -34,6 +34,11 @@ crumb :rooms_edit do
   parent :rooms
 end
 
+crumb :rooms_search do
+  link "検索結果", search_rooms_path
+  parent :rooms
+end
+
 crumb :contacts do
   link "コンタクト", contacts_index_path
   parent :rooms
