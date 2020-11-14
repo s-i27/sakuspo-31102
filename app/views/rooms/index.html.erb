@@ -39,18 +39,18 @@
         <hr class="dm">
           <h1 class='ad-footer-explain'>
             募集を探す</h1>
-            <%= search_form_for @p, url: search_rooms_path do |f| %>
-              <%= f.label :title_or_price_or_place_cont, '文字検索：', placeholder: "例 サッカー" %>
-              <%= f.text_field :title_or_price_or_place_cont, placeholder: "例 サッカー",  class: 'search-conditions' %>
+            <%= search_form_for @p, url: search_rooms_path ,class: 'search-content' do |f| %>
+              <%= f.label :title_or_price_or_place_cont, '文字検索：' %>
+              <%= f.text_field :title_or_price_or_place_cont, placeholder: "例 サッカー", :size => "50*50",class: 'search-conditions' %>
               <br>
               <%= f.label :title_eq, '競技名：' %>
-              <%= f.collection_select :category_id_eq, @category, :id, :name, include_blank: '指定なし', class: 'search-conditions' %>
+              <%= f.collection_select :category_id_eq, @category, :id, :name, {}, class: "search-conditions",include_blank: '指定なし' %>
               <br>
               <%= f.label :date_time_eq, '開催日：' %>
               <%= f.date_field :date_time_eq , class: 'search-conditions'%>
               <br>
               <%= f.label :title_eq, 'ルーム名' %>
-              <%= f.collection_select :title_eq, @room_title, :title, :title,  include_blank: '指定なし' , class: 'search-conditions'%>
+              <%= f.collection_select :title_eq, @room_title, :title, :title,  include_blank: '指定なし' ,class: 'search-conditions'%>
               <br>
               <%= f.label :price, '参加料金：' %>
               <%= f.radio_button :price_lteq, '' %>指定なし
@@ -59,7 +59,7 @@
               <%= f.radio_button :price_lteq, '2500' %>2500円以下
               <%= f.radio_button :price_lteq, '5000' %>5000円以下
               <br>
-              <%= f.submit '検索' %>
+              <%= f.submit '検索する',class: 'search-submit' %>
             <% end %>
         <hr class="dm"> 
      </div> 
