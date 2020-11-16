@@ -18,19 +18,17 @@
       <b class="show-text">内容　　　　　　　　　</b><%= @room.text %><br>
     <hr class="dm">
       <br>
-
+      
+        <%=link_to (image_tag 'df6afcc474400fe2eed4b24c0028b683.png', :size => '300x50', class: "purchase-showbtn") , new_room_path %>
   <% if user_signed_in? %>
     <div class="show-btn" >
-    <% if current_user.id != @room.user.id %>
-        <%=link_to (image_tag 'df6afcc474400fe2eed4b24c0028b683.png', :size => '300x50', class: "purchase-showbtn") , new_room_path %>
-    <% elsif current_user.id == @room.user.id %>
+    <% if current_user.id == @room.user.id %>
         <%=link_to (image_tag '54b047639fa14e5eceaf57fddc3b4e53.png', :size => '350x50', class: "purchase-showbtn") , edit_room_path(@room.id) %>
         <%=link_to (image_tag 'b97f52f503987004dc3e9cb0a3abb094.png', :size => '250x50', class: "purchase-showbtn") , room_path(@room.id), method: :delete %>
         <br>
     </div> 
     <% end %>
 	<% end %>
-			
 
   </div>
 </div>
