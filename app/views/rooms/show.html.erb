@@ -2,8 +2,12 @@
 
 <div class="show" >
   <div class="show-main" >
-      <h1><%= @room.title %></h1>
-     <%= image_tag @room.image, :size => '300x300', class: "show-img" %><br>
+      <h1 class="show-title"><%= @room.title %></h1>
+     <div class="show-image-video" > 
+      <%= image_tag @room.image, :size => '350x350', class: "show-img" %>
+      <iframe width="500" height="300" src="https://www.youtube.com/embed/-VhNu3IA98Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="show-video"></iframe>
+     </div>
+     <br>
      <hr class="dm">
       <b class="show-text">競技名　　　　　　　　　　</b><%= @room.category.name %><br>
     <hr class="dm">

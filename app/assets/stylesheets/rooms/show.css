@@ -3,8 +3,28 @@
 }
 
 .show-main{
-  margin-left: 100px;
-  margin-right: 200px;
+  margin-left: 70px;
+  padding: 5px;
+  box-shadow: 1px 1px 4px gray;
+}
+
+.show-title{
+  background: whitesmoke;
+}
+
+.show-image-video{
+  margin-top: 50px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.show-image{
+  border : solid 3px #333 ;
+}
+
+.show-video{
+  margin-left: 25px;
+  border : solid 3px #333 ;
 }
 
 .purchase-showbtn{
