@@ -7,36 +7,8 @@
 </div>
 
 <div class='contents'>
-  <div class='left-contents'>
-      <hr class="dm">
-      <h1 class='ad-footer-explain'>
-        一覧
-      </h1>
-        <ul class="left-lists">
-          <li>HOME</li><hr class="am"> 
-          <li>マイページ</li><hr class="am"> 
-          <li>メッセージ</li><hr class="am"> 
-          <li>募集一覧</li><hr class="am"> 
-          <li>設定</li><hr class="am"> 
-          <li>人気スポーツ情報</li><hr class="am"> 
-        </ul>
-      <hr class="dm">
+  <%= render "shared/side_hedder" %>
 
-      <h1 class='ad-footer-explain'>
-        スポーツ一覧
-      </h1>
-        <ul class="left-lists">
-          <li>サッカー、フットサル</li><hr class="am"> 
-          <li>ボルタリング</li><hr class="am"> 
-          <li>野球</li><hr class="am"> 
-          <li>ダーツ</li><hr class="am"> 
-          <li>ボルタリング</li><hr class="am"> 
-          <li>バレーボール</li><hr class="am"> 
-          <li>バトミントン</li><hr class="am"> 
-        </ul>
-      <hr class="dm">
-  </div>
-  
   
   <%# 新規募集情報 %>
   <div class='rihgt-contents'>
@@ -78,7 +50,7 @@
                   <h2 class="img-title"><%= room.title %><br></h1>
           <div class="content_post" >
                 <div class="content_image" >
-                  <%= image_tag room.image, :size => '200x200', class: "room-img" %>
+                  <%= image_tag room.image, :size => '300x200', class: "room-img" %>
                 </div> 
                 <div class="content_text" >
                   <span class="img-text">　　　　　開催日；　　</span><%= room.date_time %><br></span>

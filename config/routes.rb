@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   resources :rooms do
     collection {get "search"}
   end
+  resources :users, only: :show
 end
