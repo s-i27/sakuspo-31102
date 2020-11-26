@@ -5,7 +5,7 @@
         一覧
       </h1>
         <ul class="left-lists">
-          <li>HOME</li><hr class="am"> 
+          <li><%= link_to 'HOME', root_path %></li><hr class="am"> 
           <li><%= link_to 'マイページ', "/users/#{current_user.id}" %></li><hr class="am"> 
           <li>メッセージ</li><hr class="am"> 
           <li>募集一覧</li><hr class="am"> 
