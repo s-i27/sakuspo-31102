@@ -1,17 +1,19 @@
 
   <div class='left-contents'>
+      <% if user_signed_in? %>
       <hr class="dm">
       <h1 class='ad-footer-explain'>
         一覧
       </h1>
         <ul class="left-lists">
           <li><%= link_to 'HOME', root_path %></li><hr class="am"> 
-          <li><%= link_to 'マイページ', "/users/#{current_user.id}" %></li><hr class="am"> 
+          <li><%= link_to 'マイページ', "/users/#{current_user.id}" %></li><hr class="am">
           <li>メッセージ</li><hr class="am"> 
           <li>募集一覧</li><hr class="am"> 
           <li>設定</li><hr class="am"> 
           <li>人気スポーツ情報</li><hr class="am"> 
         </ul>
+      <% end %>
       <hr class="dm">
 
       <h1 class='ad-footer-explain'>
