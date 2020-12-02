@@ -26,9 +26,6 @@
               <%= f.label :date_time_eq, '開催日：' %>
               <%= f.date_field :date_time_eq , class: 'search-conditions'%>
               <br>
-              <%= f.label :title_eq, 'ルーム名' %>
-              <%= f.collection_select :title_eq, @room_title, :title, :title,  include_blank: '指定なし' ,class: 'search-conditions'%>
-              <br>
               <%= f.label :price, '参加料金：' %>
               <%= f.radio_button :price_lteq, '' %>指定なし
               <%= f.radio_button :price_lteq, '500' %>500円以下

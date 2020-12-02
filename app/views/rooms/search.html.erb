@@ -1,21 +1,37 @@
 <% breadcrumb :rooms_search %>
 
-<h1>
-  検索結果
-</h1>
-<%# 検索結果の個数で条件分岐 %>
-<% if @results.length !=0 %>
-  <% @results.each do |result| %>
-    <td>
+<div class='contents'>
+
+    <%= render "shared/side_hedder" %>
+
+    <%# 検索結果の個数で条件分岐 %>
+  <div class='rihgt-contents'>
+    <h1>
+      検索結果
+    </h1>
+    <% if @results.length !=0 %>
+      <% @results.each do |result| %>
+          <%= link_to room_path(result.id) do %>
+        <div class="content_post" >
+          <div class="content_image" >
+            <%= image_tag result.image, :size => '300x200', class: "room-img" %>
+          </div>
+          <div class="content_text" >
+            <span class="img-text">　　　　　開催日；　　</span><%= result.date_time %><br></span>
+            <span class="img-text">　　　　　競技名；　　</span><%= result.category.name %><br></tr>
+            <span class="img-text">　　　　　参加料金；　</span><%= result.price %>円<br></span>
+            <span class="img-text">　　　　　会場；　　　</span><%= result.place %><br></span>
+            <span class="img-text">　　　　　主催者；　　</span><%= result.user.nickname %>　様<br></span>
+          <% end %>
+          </div> 
+        </div> 
+        
+      <% end %>
+    <% else %>
+      該当する募集はありません
+    <% end %>
     <br>
-    <li>
-      <%= result.title %>
-    </li>
-  <% end %>
-<% else %>
-  該当する募集はありません
-<% end %>
-<br>
 
-<%= link_to 'トップページへ戻る', root_path %>
-
+    <%= link_to 'トップページへ戻る', root_path %>
+  </div>
+</div>

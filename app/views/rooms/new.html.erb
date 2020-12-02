@@ -60,7 +60,7 @@
       </div>
       <div class="rooms-place">
         <%= f.label :place, "会場　　" %><br />
-        <%= f.text_field :place, autofocus: true, autocomplete: "place",class:"text_place" %>
+        <%= f.text_field :place, autofocus: true, autocomplete: "place",class:"text_place",placeholder: "住所、会場名" %>
       </div>
        <div class="rooms-image">
         <%= f.label :image, "会場や競技中の画像" %><br />
@@ -70,9 +70,6 @@
         <%= f.label :video, "競技中動画URL" %><br />
         <%= f.text_field :place, autofocus: true, autocomplete: "place" , placeholder:"任意",class:"text_image" %>
       </div>
-
-      <%= link_to 'Facebookで登録', user_facebook_omniauth_authorize_path, method: :post%>
-      <%= link_to 'Googleで登録', user_google_oauth2_omniauth_authorize_path, method: :post%>
 
       <div class="rooms-submit">
         <%= f.submit "募集する" %>
