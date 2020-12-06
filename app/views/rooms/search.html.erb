@@ -24,9 +24,9 @@
             <span class="img-text">　　　　　主催者；　　</span><%= result.user.nickname %>　様<br></span>
           <% end %>
           </div> 
-        </div> 
-        
+        </div>  
       <% end %>
+          <%= paginate @results %>
     <% else %>
       該当する募集はありません
     <% end %>

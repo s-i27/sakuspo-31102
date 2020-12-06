@@ -3,10 +3,11 @@
 <div class="rooms">
   <div class="rooms-inner">
     <%= form_with model: @room, local: true do |f| %>
-
-      <%= render 'shared/error_messages', model: f.object  %>
    
       <h1>募集情報新規作成</h1>
+      
+      <%= render 'shared/error_messages', model: f.object %>
+
       <div class="rooms-gender">
         <%= f.label :catedgory_id, "募集競技" %><br />
          <%= f.collection_select(:category_id, Category.all, :id, :name, {}, {class:"select-box", id:"category"}) %>

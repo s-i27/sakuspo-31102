@@ -47,7 +47,7 @@ class RoomsController < ApplicationController
   end  
 
   def search
-    @results = @p.result
+    @results = @p.result.page(params[:page]).per(5)
   end
 
   private
