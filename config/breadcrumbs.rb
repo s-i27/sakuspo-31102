@@ -13,6 +13,11 @@ crumb :session do
   parent :root
 end
 
+crumb :users_show do
+  link "マイページ", user_path
+  parent :root
+end
+
 # rooms
 crumb :rooms do
   link "募集一覧", rooms_path
