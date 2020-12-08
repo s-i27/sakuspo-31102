@@ -23,7 +23,7 @@ Things you may want to cover:
 
 * ...
 
-#　・アプリ名
+・アプリ名
    sakuspo
    
 ・概要
@@ -40,21 +40,22 @@ Things you may want to cover:
   
 ・DEMO(gifで動画や写真を貼って、ビューのイメージを掴んでもらいます)
 　　募集情報作成
+  
 　　　https://gyazo.com/ced411e55596018b2d19883afdaa00ec
+   
    募集情報検索
+   
    　https://gyazo.com/3cd73bc59bc85880afd58a83e0146138
 
 ・実装予定の内容
+　　非同期通信でのメッセージ機能追加
+　　募集内容内でのスポーツ動画再生機能追加
+　　アンケート機能追加
 
 ・工夫したポイント
 
 ・使用技術(開発環境)
-　　Ruby、Ruby on Rails、　
-
-・課題や今後実装したい機能
-　　非同期通信でのメッセージ機能追加
-　　募集内容内でのスポーツ動画再生機能追加
-　　アンケート機能追加
+　　Ruby、Ruby on Rails、CSS、HTML
 
 # テーブル設計
 		## usersテーブル
@@ -90,7 +91,7 @@ Things you may want to cover:
 			- has_one :history
 
 		## historysテーブル
-		| Column            | Type       | Options                        |
+		Column            | Type       | Options                        |
 		| ------------------| ---------- | ------------------------------ |
 		| user              | references | null: false,foreign_key: true  |
 		| room              | references | null: false,foreign_key: true  |
