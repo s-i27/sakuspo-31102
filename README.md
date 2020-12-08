@@ -17,15 +17,13 @@
 　　募集情報作成<br>
 　　　　![demo](https://gyazo.com/ced411e55596018b2d19883afdaa00ec/raw)<br>  
 　　募集情報検索<br>
-        https://gyazo.com/3af5b7bf92813b0a4764f67a3833a141
-    　　<br>
+ ![demo](https://gyazo.com/3af5b7bf92813b0a4764f67a3833a141/raw)<br>  
+    <br>
 ## 実装予定の内容
 　　非同期通信でのメッセージ機能追加<br>
 　　募集内容の詳細画面でスポーツ動画再生機能追加<br>
 　　アンケート機能追加<br>
-　　　　![demo](https://gyazo.com/3af5b7bf92813b0a4764f67a3833a141/raw)<br>
-
-
+  
 ## 工夫したポイント
 　　動画や写真でスポーツのプレイ映像を見れるように作成
 
