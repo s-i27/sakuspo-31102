@@ -54,9 +54,9 @@
 		| gender_id       | integer    | null: false                    |
 		| phone_number    | string     | null: false                    |
 		
-		### Association
-		- has_many :rooms
-		- has_many :historys
+                ### Association
+			- has_many :rooms
+			- has_many :historys
 
 		## roomsテーブル
 		| Column             | Type       | Options                        |
