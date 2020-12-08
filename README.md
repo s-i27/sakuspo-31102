@@ -15,8 +15,8 @@
 <br>
 ## DEMO(gifで動画や写真を貼って、ビューのイメージを掴んでもらいます)
 　　募集情報作成<br>
-　　　https://gyazo.com/ced411e55596018b2d19883afdaa00ec<br>   
-   募集情報検索<br>   
+　　　https://gyazo.com/ced411e55596018b2d19883afdaa00ec<br> 
+　　募集情報検索<br>
    　https://gyazo.com/3cd73bc59bc85880afd58a83e0146138<br>
 ## 実装予定の内容
 　　非同期通信でのメッセージ機能追加<br>
