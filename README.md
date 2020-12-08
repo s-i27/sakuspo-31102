@@ -15,9 +15,10 @@
 <br>
 ## DEMO
 　　募集情報作成<br>
-  ![demo](https://gyazo.com/62b165aebfc42c49fc1e2abe3b1fec42/raw)
 　　　　![demo](https://gyazo.com/ced411e55596018b2d19883afdaa00ec/raw)<br>  
 　　募集情報検索<br>
+    ![demo](https://gyazo.com/3af5b7bf92813b0a4764f67a3833a141/raw)
+    https://gyazo.com/3af5b7bf92813b0a4764f67a3833a141
     　　<br>
 ## 実装予定の内容
 　　非同期通信でのメッセージ機能追加<br>
