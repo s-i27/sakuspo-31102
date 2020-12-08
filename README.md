@@ -13,13 +13,11 @@
 　　探してみるが、初心者や未経験スポーツなため、体験したいスポーツのハードルが高く毎回フットサルをやることになっていました。<br>
 　　そこで気軽に参加できる多種スポーツ参加サイトがあれば良いなと考えました。
 <br>
-## DEMO(gifで動画や写真を貼って、ビューのイメージを掴んでもらいます)
+## DEMO
 　　募集情報作成<br>
-　　　　![demo](https://gyazo.com/ced411e55596018b2d19883afdaa00ec/raw)<br>
-    　　　　![demo](https://gyazo.com/62b165aebfc42c49fc1e2abe3b1fec42/raw)<br>
-    
+  ![demo](https://gyazo.com/62b165aebfc42c49fc1e2abe3b1fec42/raw)
+　　　　![demo](https://gyazo.com/ced411e55596018b2d19883afdaa00ec/raw)<br>  
 　　募集情報検索<br>
-  ![demo](https://gyazo.com/62b165aebfc42c49fc1e2abe3b1fec42/raw)<br>
     　　<br>
 ## 実装予定の内容
 　　非同期通信でのメッセージ機能追加<br>
