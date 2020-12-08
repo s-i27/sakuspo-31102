@@ -33,7 +33,7 @@
 ### バックエンド
 　　Ruby、Ruby on Rails
 ### フロントエンド
-　　HTML、CSS
+　　HTML、CSS、JavaScript、JQuery
 ### データベース
 　　MySQL
 ### ソース管理
