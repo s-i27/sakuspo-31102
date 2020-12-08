@@ -58,7 +58,7 @@
 		- has_many :rooms
 		- has_many :historys
 
-    ## roomsテーブル
+   　　　　　　　 ## roomsテーブル
 		| Column             | Type       | Options                        |
 		| -------------------| ---------- | ------------------------------ |
 		| title              | string     | null: false			   |
