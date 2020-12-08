@@ -17,7 +17,6 @@
 　　募集情報作成<br>
 　　　　![demo](https://gyazo.com/ced411e55596018b2d19883afdaa00ec/raw)<br>  
 　　募集情報検索<br>
-  ![demo](https://gyazo.com/0d45f24bef07e957e7ad41e84dad75c0/raw)
  ![demo](https://gyazo.com/cac82e4cc29c91e28d9c02b88f04819f/raw)<br>  
     <br>
 ## 実装予定の内容
