@@ -37,9 +37,9 @@
 ### データベース
 　　MySQL
 ### ソース管理
-   GitHub、GitHubDesktop
+　　GitHub、GitHubDesktop
 ### エディタ
-   VSCode
+　　VSCode
   
 
 ## テーブル設計
