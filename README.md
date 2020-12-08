@@ -23,7 +23,7 @@ Things you may want to cover:
 
 * ...
 
-・アプリ名
+#　・アプリ名
    sakuspo
    
 ・概要
@@ -31,7 +31,6 @@ Things you may want to cover:
    
 ・本番環境
 　　デプロイ先：https://sakuspo-31102.herokuapp.com/
-　　テストアカウント＆ID　未  
   
 ・制作背景(意図)
 　　自分自身趣味でフットサルをやっており、フットサル個人参加サイトを利用して週５でフットサルをしていました。
@@ -40,8 +39,11 @@ Things you may want to cover:
 　　そこで気軽に参加できる多種スポーツ参加サイトがあれば良いなと考えました。
   
 ・DEMO(gifで動画や写真を貼って、ビューのイメージを掴んでもらいます)
-　⇒特に、デプロイがまだできていない場合はDEMOをつけることで見た目を企業側に伝えることができます。
- 
+　　募集情報作成
+　　　https://gyazo.com/ced411e55596018b2d19883afdaa00ec
+   募集情報検索
+   　https://gyazo.com/3cd73bc59bc85880afd58a83e0146138
+
 ・実装予定の内容
 
 ・工夫したポイント
@@ -73,18 +75,17 @@ Things you may want to cover:
     ## roomsテーブル
 		| Column             | Type       | Options                        |
 		| -------------------| ---------- | ------------------------------ |
-		| title              | string     | null: false							       |
+		| title              | string     | null: false			   |
 		| text               | text       | null: false                    |
-		| category_id        | integer    | null: false 						       |
+		| category_id        | integer    | null: false 		   |
 		| price              | integer    | null: false                    |
 		| date_time          | date       | null: false                    |
 		| deadline_date_time | date       | null: false                    |
 		| place              | string     | null: false                    |
-    | image              |            | active storage(GEM)            |
-    | video              | string     |                                |
-    | user               | references | null: false,foreign_key: true  |
-
-		### Association
+		| image              |            | active storage(GEM)            |
+		| video              | string     |                                |
+		| user               | references | null: false,foreign_key: true  |
+                ### Association
 			- belongs_to :user
 			- has_one :history
 
@@ -93,7 +94,6 @@ Things you may want to cover:
 		| ------------------| ---------- | ------------------------------ |
 		| user              | references | null: false,foreign_key: true  |
 		| room              | references | null: false,foreign_key: true  |
-
-    ### Association
+                ### Association
 			- belongs_to :user
 			- belongs_to :room
