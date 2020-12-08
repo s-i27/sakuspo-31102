@@ -1,14 +1,11 @@
-# README
-
 # アプリ名
    sakuspo
-   <br>
-   
+<br>
 # 概要
-   一人で気軽に参加できる多種スポーツ参加サイト
+ ## 一人で気軽に参加できる多種スポーツ参加サイト
    
 # 本番環境
-　　デプロイ先：https://sakuspo-31102.herokuapp.com/
+ ## デプロイ先：https://sakuspo-31102.herokuapp.com/
   
 ・制作背景(意図)
 
