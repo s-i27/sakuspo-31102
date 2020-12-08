@@ -58,7 +58,7 @@
 		- has_many :rooms
 		- has_many :historys
 
-   　　　　　　　 ## roomsテーブル
+		## roomsテーブル
 		| Column             | Type       | Options                        |
 		| -------------------| ---------- | ------------------------------ |
 		| title              | string     | null: false			   |
@@ -71,6 +71,7 @@
 		| image              |            | active storage(GEM)            |
 		| video              | string     |                                |
 		| user               | references | null: false,foreign_key: true  |
+		
                 ### Association
 			- belongs_to :user
 			- has_one :history
