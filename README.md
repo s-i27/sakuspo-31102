@@ -16,6 +16,7 @@
 ## DEMO(gifで動画や写真を貼って、ビューのイメージを掴んでもらいます)
 　　募集情報作成<br>
 　　　　![demo](https://gyazo.com/ced411e55596018b2d19883afdaa00ec/raw)<br>
+    　　　　![demo](https://gyazo.com/62b165aebfc42c49fc1e2abe3b1fec42/raw)<br>
     
 　　募集情報検索<br>
   ![demo](https://gyazo.com/62b165aebfc42c49fc1e2abe3b1fec42/raw)<br>
