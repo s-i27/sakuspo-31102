@@ -29,7 +29,18 @@
 　　動画や写真でスポーツのプレイ映像を見れるように作成
 
 ## 使用技術(開発環境)
-　　Ruby、Ruby on Rails、CSS、HTML
+
+### バックエンド
+　　Ruby、Ruby on Rails
+### フロントエンド
+　　HTML、CSS
+### データベース
+　　MySQL
+### ソース管理
+   GitHub、GitHubDesktop
+### エディタ
+   VSCode
+  
 
 ## テーブル設計
 		## usersテーブル
