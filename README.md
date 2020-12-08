@@ -18,7 +18,7 @@
 ### 募集情報作成<br>
 　　　　![demo](https://gyazo.com/ced411e55596018b2d19883afdaa00ec/raw)<br>  
 ### 募集情報検索<br>
- ![demo](https://gyazo.com/40878c5d2b9868920826bde2147791d2/raw)<br>  
+ ![demo](https://gyazo.com/bde6a5a0a73b3d558cfd3f956a6cb56f/raw)<br>  
     <br>
 ## 実装予定の内容
 　　非同期通信でのメッセージ機能追加<br>
