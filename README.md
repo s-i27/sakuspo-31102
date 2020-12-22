@@ -5,7 +5,7 @@
 　　一人で気軽に参加できる多種スポーツ参加サイト
 <br>   
 ## 本番環境
-　　デプロイ先：https://sakuspo-31102.herokuapp.com/　<br>
+　　デプロイ先：https://sakuspo-31102.herokuapp.com/<br>
   　（一分機能修正中）
 <br> 
 ## 制作背景(意図)
